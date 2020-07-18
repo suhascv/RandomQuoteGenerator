@@ -73,14 +73,14 @@ class RandomQuotes extends React.Component{
                 <h1 className={this.state.animation}><i class="fa fa-quote-left"></i> {data[this.state.current]['text']}</h1>
         <h4 className={this.state.authorAnimation}> ~ {author} </h4>
 
-        <div className="quote-footer" >
-        <div>
-        <a style={{color:this.state.colors[this.state.bgcolor]}} href={twitterShare} target="#_blank"><i className="fa fa-twitter" ></i> </a>
-        </div> 
-        <button style={{backgroundColor:this.state.colors[this.state.bgcolor],border:'none'}} onClick={this.changeQuote}>Change Quote</button>
-        </div>
+            <div className="quote-footer" >
+                <div>
+                <a style={{color:this.state.colors[this.state.bgcolor]}} href={twitterShare} target="#_blank"><i className="fa fa-twitter" ></i> </a>
+                </div> 
+                <button style={{backgroundColor:this.state.colors[this.state.bgcolor],border:'none'}} onClick={this.changeQuote}>Change Quote</button>
                 </div>
-        
+            </div>
+            <a href="https://github.com/suhascv" target="#_blank" className="developed"> <h6>by SuhasCv</h6>  </a>
             </div>
         )
     }
