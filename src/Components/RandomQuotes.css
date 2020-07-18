@@ -11,11 +11,38 @@
     background-color: aliceblue;
     margin-top: -200px;
     margin-bottom: 30px;
-    height: 200px;
+    padding:10px;
+    height: 400px;
     width: 600px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
     border-radius: 1%;
+}
+.quote-container h4{
+    text-align: right;
+}
+
+.quote-footer{
+    background-color: aliceblue;
+    display: flex;
+}
+
+button{
+    color:white;
+    height:50px;
+    width:100px;
+    border-radius: 4px;
+    font-size: small;
+    font-weight: 100;
+    border-style:  none;
+}
+
+button:hover{
+    transform:scale(1.1);
+    cursor: pointer;
+}
+
+.something{
+    color:#e46969 #868d26 #3f7216;
 }
