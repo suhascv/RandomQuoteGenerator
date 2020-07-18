@@ -7,12 +7,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height:110vh;
+    min-height:110vh;
 }
 
 .quote-container{
     background-color: aliceblue;
-    margin-top: -200px;
     margin-bottom: 30px;
     padding:50px;
     height: 400px;
@@ -82,13 +81,16 @@ button:hover{
 @media(max-width:565px){
     .container{
         width:100vw;
-        overflow-x: hidden;        
+        overflow-x: hidden; 
+        margin-top:0;       
     }
 
     .quote-footer{
         width:80vw;
     }
     .quote-container{
+        top:0;
+        margin-top:0;
         width:80vw;
         height:auto;
     }
