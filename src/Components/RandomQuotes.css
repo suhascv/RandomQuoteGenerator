@@ -11,7 +11,7 @@
     background-color: aliceblue;
     margin-top: -200px;
     margin-bottom: 30px;
-    padding:10px;
+    padding:50px;
     height: 400px;
     width: 600px;
     display: flex;
@@ -20,22 +20,38 @@
     border-radius: 1%;
 }
 .quote-container h4{
+    margin-top:0;
+    padding-top:0;
     text-align: right;
 }
 
 .quote-footer{
     background-color: aliceblue;
     display: flex;
+    justify-content: space-between;
+    border:white;
+}
+
+.quote-footer i{
+    font-size: 80px;
+    margin: 10px;
+    content:''
+}
+
+.quote-footer a{
+    text-decoration: none;
 }
 
 button{
     color:white;
     height:50px;
     width:100px;
-    border-radius: 4px;
     font-size: small;
     font-weight: 100;
-    border-style:  none;
+    border:white 1px solid;
+    margin: 0;
+    padding: 0;
+    outline:0;
 }
 
 button:hover{
@@ -43,6 +59,25 @@ button:hover{
     cursor: pointer;
 }
 
+.quote-footer i:hover{
+    transform:scale(1.1);
+    cursor: pointer;
+}
 .something{
     color:#e46969 #868d26 #3f7216;
+}
+
+@media(max-width:565px){
+    .container{
+        width:100vw;
+        overflow-x: hidden;        
+    }
+
+    .quote-footer{
+        width:80vw;
+    }
+    .quote-container{
+        width:80vw;
+        height:auto;
+    }
 }
