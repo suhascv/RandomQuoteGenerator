@@ -50,10 +50,10 @@ class RandomQuotes extends React.Component{
              
     }
 
-    getShareContent(){
+    getShareContent(author){
         let words= data[this.state.current]['text']
         words=words.replace(/\s/g,"+")
-        let authorsName=data[this.state.current]['author']
+        let authorsName=author
         authorsName = authorsName.replace(/\s/g,"+")
         return words+"+-+"+authorsName
     }
@@ -63,9 +63,9 @@ class RandomQuotes extends React.Component{
         if(author==null){
             author='Anonymous'
         }
-        let share=this.getShareContent()
+        let share=this.getShareContent(author)
         let twitterShare = "https://twitter.com/intent/tweet?text="+share
-        console.log(twitterShare)
+        
         return (
             <div style={{backgroundColor:this.state.colors[this.state.bgcolor]}} className="container">
                 <div className="quote-container" style={{color:this.state.colors[this.state.bgcolor]}}>
