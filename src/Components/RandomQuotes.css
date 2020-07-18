@@ -11,9 +11,10 @@
 
 .quote-container{
     background-color: aliceblue;
+    margin-top:20px;
     margin-bottom: 30px;
     padding:50px;
-    height: 400px;
+    min-height:400px ;
     width: 600px;
     display: flex;
     flex-direction: column;
@@ -87,6 +88,7 @@ button:hover{
 
     .quote-footer{
         width:90vw;
+        height:auto;
         overflow-x: hidden; 
     }
     .quote-container{
@@ -95,6 +97,7 @@ button:hover{
         margin-top:0;
         padding-top:0;
         width:90vw;
-        min-height:70vh;
+        min-height:50vh;
+        max-height: auto;
     }
 }
