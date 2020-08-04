@@ -49,6 +49,9 @@ class RandomQuotes extends React.Component{
         this.setState({authorAnimation:'animate__animated animate__fadeInLeft'})
              
     }
+    async componentDidMount(){
+       let resp =await fetch('https://aromatic-fragrant-zinc.glitch.me/api/whoami');
+    }
 
     getShareContent(author){
         let words= data[this.state.current]['text']
